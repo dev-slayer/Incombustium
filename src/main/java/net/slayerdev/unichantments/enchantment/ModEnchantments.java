@@ -13,6 +13,9 @@ public class ModEnchantments {
             new EvocationEnchantment(Enchantment.Rarity.UNCOMMON,
                     EnchantmentTarget.BREAKABLE, EquipmentSlot.MAINHAND));
 
+    public static Enchantment CONDUCTOR = register("conductor",
+            new ConductorEnchantment(Enchantment.Rarity.UNCOMMON,
+                    EnchantmentTarget.ARMOR));
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Unichantments.MOD_ID, name), enchantment);
     }
