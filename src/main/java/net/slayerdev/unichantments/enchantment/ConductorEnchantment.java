@@ -46,4 +46,19 @@ public class ConductorEnchantment extends Enchantment {
     public int getMaxLevel() {
         return 3;
     }
+
+    @Override
+    public boolean isTreasure() {
+        return true;
+    }
+
+    @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return false;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return false;
+    }
 }
