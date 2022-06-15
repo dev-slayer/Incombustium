@@ -16,6 +16,10 @@ public class ModEnchantments {
     public static Enchantment CONDUCTOR = register("conductor",
             new ConductorEnchantment(Enchantment.Rarity.UNCOMMON,
                     EnchantmentTarget.ARMOR));
+
+    public static Enchantment KERFUFFLE = register("kerfuffle",
+            new ConductorEnchantment(Enchantment.Rarity.RARE,
+                    EnchantmentTarget.BOW));
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Unichantments.MOD_ID, name), enchantment);
     }

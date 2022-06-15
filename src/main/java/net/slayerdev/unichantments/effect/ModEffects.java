@@ -7,14 +7,11 @@ import net.minecraft.util.registry.Registry;
 import net.slayerdev.unichantments.Unichantments;
 
 public class ModEffects {
-    public static StatusEffect EVOCATION;
-
-    public static StatusEffect registerStatusEffect(String name) {
-        return Registry.register(Registry.STATUS_EFFECT, new Identifier(Unichantments.MOD_ID, name),
-                new EvocationEffect(StatusEffectCategory.HARMFUL, 3124687));
-    }
+    public static final StatusEffect EVOCATION = new EvocationEffect();
+    public static final StatusEffect RANDOM = new RandomEffect();
 
     public static void registerEffects() {
-        EVOCATION = registerStatusEffect("evocation");
+        Registry.register(Registry.STATUS_EFFECT, new Identifier("unichantments", "evocation"), EVOCATION);
+        Registry.register(Registry.STATUS_EFFECT, new Identifier("unichantments", "random"), RANDOM);
     }
 }

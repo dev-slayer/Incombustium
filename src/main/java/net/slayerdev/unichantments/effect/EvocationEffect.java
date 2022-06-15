@@ -11,8 +11,9 @@ import net.minecraft.util.math.BlockPos;
 
 
 public class EvocationEffect extends StatusEffect {
-    public EvocationEffect(StatusEffectCategory statusEffectCategory, int color) {
-        super(statusEffectCategory, color);
+
+    public EvocationEffect() {
+        super(StatusEffectCategory.HARMFUL, 0x95B282);
     }
 
     @Override
