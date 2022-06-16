@@ -18,8 +18,12 @@ public class ModEnchantments {
                     EnchantmentTarget.ARMOR));
 
     public static Enchantment KERFUFFLE = register("kerfuffle",
-            new ConductorEnchantment(Enchantment.Rarity.RARE,
-                    EnchantmentTarget.BOW));
+            new EvocationEnchantment(Enchantment.Rarity.UNCOMMON,
+                    EnchantmentTarget.BOW, EquipmentSlot.MAINHAND));
+
+    public static Enchantment INSTANT_KILL = register("INSTANT_KILL",
+            new EvocationEnchantment(Enchantment.Rarity.UNCOMMON,
+                    EnchantmentTarget.BREAKABLE, EquipmentSlot.MAINHAND));
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Unichantments.MOD_ID, name), enchantment);
     }
