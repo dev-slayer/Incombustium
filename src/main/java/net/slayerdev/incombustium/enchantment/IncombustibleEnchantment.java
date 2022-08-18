@@ -27,9 +27,8 @@ public class IncombustibleEnchantment extends Enchantment {
 
     @Override
     public boolean isAvailableForRandomSelection() {
-        return false;
+        return true;
     }
-
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
         return true;

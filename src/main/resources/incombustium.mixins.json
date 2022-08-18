@@ -4,9 +4,9 @@
   "package": "net.slayerdev.incombustium.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "IncombustibleMixin"
   ],
   "client": [
-    "IncombustibleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

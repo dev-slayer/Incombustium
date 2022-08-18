@@ -8,7 +8,7 @@ import net.slayerdev.incombustium.Incombustium;
 
 public class RegisterEnchantments {
     public static Enchantment INCOMBUSTIBLE = register("incombustible",
-            new IncombustibleEnchantment(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.BREAKABLE));
+            new IncombustibleEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.BREAKABLE));
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Incombustium.MOD_ID, name), enchantment);
     }

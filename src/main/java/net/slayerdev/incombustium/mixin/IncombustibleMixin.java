@@ -18,13 +18,12 @@ public abstract class IncombustibleMixin {
 
 	@Inject(at = @At("HEAD"), method = "isFireImmune", cancellable = true)
 	private void incombustible$FireImmuneChecks(CallbackInfoReturnable<Boolean> cir) {
-		if(EnchantmentHelper.getLevel(RegisterEnchantments.INCOMBUSTIBLE, getStack()) == 1 || getStack().isIn(RegisterTags.Items.INCOMBUSTIBLE)) {
+		if(EnchantmentHelper.getLevel(RegisterEnchantments.INCOMBUSTIBLE, getStack()) == 1 || getStack().isIn(RegisterTags.Items.INFLAMMABLE) || getStack().isIn(RegisterTags.Items.INCOMBUSTIBLE)) {
 			cir.setReturnValue(true);
 		}
 	}
-
 	@Inject(at = @At("HEAD"), method = "damage", cancellable = true)
-	public void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+	public void incombustible$DamageImmuneChecks(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
 		if(EnchantmentHelper.getLevel(RegisterEnchantments.INCOMBUSTIBLE, getStack()) == 1 || getStack().isIn(RegisterTags.Items.INCOMBUSTIBLE) && !source.isOutOfWorld()) {
 			cir.setReturnValue(false);
 		}
