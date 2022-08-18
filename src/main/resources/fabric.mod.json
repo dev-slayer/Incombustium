@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Incombustium",
-  "description": "enchant mod lmao",
+  "description": "Have you ever lost your items in a tragic accident? I have a solution!",
   "authors": [
     "Slayerdev"
   ],
@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/incombustium/icon.gif",
 
   "environment": "*",
   "entrypoints": {
