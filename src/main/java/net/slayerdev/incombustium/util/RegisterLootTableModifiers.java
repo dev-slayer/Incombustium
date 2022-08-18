@@ -1,22 +1,16 @@
-package net.slayerdev.unichantments.util;
+package net.slayerdev.incombustium.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
-import net.fabricmc.fabric.api.loot.v2.LootTableSource;
 import net.minecraft.item.Items;
-import net.minecraft.loot.LootManager;
 import net.minecraft.loot.LootPool;
-import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.function.EnchantRandomlyLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
-import net.slayerdev.unichantments.enchantment.EvocationEnchantment;
 
-public class ModLootTableModifiers {
+public class RegisterLootTableModifiers {
     private static final Identifier WOODLAND_MANSION_CHEST_ID
             = new Identifier("minecraft", "chests/woodland_mansion");
 

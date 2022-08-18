@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "unichantments",
+  "id": "incobustium",
   "version": "${version}",
 
-  "name": "Unique Enchantments",
-  "description": "Implied by the name, this mod adds a few unique enchantments that you may not find in the Enchanting Table!",
+  "name": "Incombustium",
+  "description": "enchant mod lmao",
   "authors": [
     "Slayerdev"
   ],
@@ -19,14 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.slayerdev.unichantments.Unichantments"
+      "net.slayerdev.incombustium.Incombustium"
     ],
     "client": [
-      "net.slayerdev.unichantments.UnichantmentsClient"
+      "net.slayerdev.incombustium.IncombustiumClient"
     ]
   },
   "mixins": [
-    "unichantments.mixins.json"
+    "incombustium.mixins.json"
   ],
 
   "depends": {
