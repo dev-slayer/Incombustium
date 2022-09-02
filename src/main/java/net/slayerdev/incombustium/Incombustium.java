@@ -1,6 +1,8 @@
 package net.slayerdev.incombustium;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.item.ItemStack;
 import net.slayerdev.incombustium.enchantment.RegisterEnchantments;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

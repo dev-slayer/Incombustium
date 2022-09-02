@@ -2,6 +2,10 @@
   "values": [
     "minecraft:obsidian",
     "minecraft:crying_obsidian",
+    "minecraft:respawn_anchor",
+    "minecraft:ender_chest",
+    "minecraft:enchanting_table",
+    "minecraft:beacon",
     "minecraft:nether_star",
     "minecraft:dragon_egg"
   ]

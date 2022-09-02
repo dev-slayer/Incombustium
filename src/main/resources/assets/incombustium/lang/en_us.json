@@ -1,4 +1,15 @@
 {
   "enchantment.incombustium.incombustible": "Incombustible",
-  "enchantment.incombustium.incombustible.desc": "Makes the item resistant to all but the void."
+  "enchantment.incombustium.spectral": "Spectral",
+  "enchantment.incombustium.everlasting": "Everlasting",
+  "enchantment.incombustium.time": "Curse of Times",
+  "enchantment.incombustium.gravitation": "Curse of Gravitation",
+  "enchantment.incombustium.clumsy": "Curse of Clumsy",
+
+  "enchantment.incombustium.incombustible.desc": "Makes the item resistant to all but the void.",
+  "enchantment.incombustium.spectral.desc": "Makes the item glow whilst on the ground.",
+  "enchantment.incombustium.everlasting.desc": "Makes the item take longer to despawn.",
+  "enchantment.incombustium.time.desc": "Makes the item despawn much faster.",
+  "enchantment.incombustium.gravitation.desc": "Makes the item float when dropped.",
+  "enchantment.incombustium.clumsy.desc": "When hit, there is a chance you drop this item."
 }
